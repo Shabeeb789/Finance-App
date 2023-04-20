@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:managment/Screens/home.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:managment/widgets/bottomnavigationbar.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,8 +20,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Timer(Duration(seconds: 10), () {
-      Navigator.push(context, MaterialPageRoute(builder:(context) => Home(),)
+    Timer(Duration(seconds: 5), () {
+      Navigator.push(context, MaterialPageRoute(builder:(context) => Bottom(),)
       );
     }
     );
